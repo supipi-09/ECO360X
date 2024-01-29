@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.DashBordFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="18.0" layoutY="17.0" opacity="0.5" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assests/bg_lions.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="52.0" layoutY="20.0" prefHeight="70.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assests/logo.png" />
+               </image>
+            </ImageView>
+            <ButtonBar prefHeight="70.0" prefWidth="800.0">
+              <buttons>
+                  <Button layoutX="725.0" layoutY="33.0" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="25.0" style="-fx-background-color: rgba(217, 217, 217, 0.45);" text="Home">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="640.0" layoutY="33.0" mnemonicParsing="false" onAction="#coursesOnAction" style="-fx-background-color: rgba(217, 217, 217, 0.45);" text="Courses">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="555.0" layoutY="33.0" mnemonicParsing="false" onAction="#aboutUsOnAction" style="-fx-background-color: rgba(217, 217, 217, 0.45);" text="About us">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="470.0" layoutY="33.0" mnemonicParsing="false" onAction="#contactUsOnAction" style="-fx-background-color: rgba(217, 217, 217, 0.45);" text="Contact us">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#loginSignupOnAction" style="-fx-background-color: rgba(66, 107, 31, 1);" text="loging/sign-up" textFill="WHITE" />
+              </buttons>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="contextB" layoutY="70.0" prefHeight="530.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.SignUpFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="8.0" layoutY="7.0" opacity="0.5" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assests/bg_lions.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="42.0" layoutY="10.0" prefHeight="70.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assests/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="213.0" layoutY="70.0" prefHeight="486.0" prefWidth="375.0" style="-fx-background-color: rgba(217, 217, 217, 0.45);">
+         <children>
+            <Label layoutX="6.0" layoutY="7.0" text="First Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="77.0" text="Last Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwdField" layoutY="104.0" prefHeight="43.0" prefWidth="375.0" promptText="Password" style="-fx-background-color: rgba(217, 217, 217, 0.45);" />
+            <Button layoutX="256.0" layoutY="422.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="28.0" prefWidth="88.0" style="-fx-background-color: rgba(66, 107, 31, 1);" text="sign up" textFill="#d9d9d9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtUserName" layoutY="34.0" prefHeight="43.0" prefWidth="375.0" promptText="User Name" style="-fx-background-color: rgba(217, 217, 217, 0.45);" />
+            <Label layoutX="5.0" layoutY="148.0" text="E-mail">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwdField1" layoutY="175.0" prefHeight="43.0" prefWidth="375.0" promptText="Password" style="-fx-background-color: rgba(217, 217, 217, 0.45);" />
+            <Label layoutX="6.0" layoutY="218.0" text="User Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwdField11" layoutY="245.0" prefHeight="43.0" prefWidth="375.0" promptText="Password" style="-fx-background-color: rgba(217, 217, 217, 0.45);" />
+            <Label layoutX="6.0" layoutY="288.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwdField111" layoutY="326.0" prefHeight="43.0" prefWidth="375.0" promptText="Password" style="-fx-background-color: rgba(217, 217, 217, 0.45);" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
