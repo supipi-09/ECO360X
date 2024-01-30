@@ -1,4 +1,4 @@
-package eco360X.controller;
+package ruh.group14.eco360X.controller;
 
 public class HomeFormController {
 }

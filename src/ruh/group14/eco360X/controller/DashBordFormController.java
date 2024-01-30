@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DashBordFormController {
-    public AnchorPane context;//id
+    public AnchorPane context;//id'
     public AnchorPane contextB;//id
 
     public void homeOnAction(ActionEvent actionEvent) throws IOException {//method
