@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="530.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.LoginAboutUsFormController">
-    <children>
-        <Label layoutX="257.0" layoutY="231.0" text="Login AboutUs">
-            <font>
-                <Font size="46.0" />
-            </font>
-        </Label>
-    </children>
+   <children>
+      <Pane prefHeight="530.0" prefWidth="800.0">
+         <children>
+            <TextArea layoutX="13.0" layoutY="14.0" prefHeight="360.0" prefWidth="775.0" text="            ECO360X is a venture of ECO360X Holdings, established with the commitment to provide &#10;   the best in Higher Education, making it more accessible and effordable to students across the country.&#10;    Located in the heart of Colombo, as well as with a branch campus in Kandy, ECO360X aspires to play &#10;                      a central role in making Sri Lanka an international education hub of Asia. &#10;            The state-of-the-art learning facilities enable students to have access to education on &#10;                               par with international standards, from the comfort of home.&#10;          At ECO360X, our focus is on delivering excellence in education with the highest international &#10;                standards, assuring only the best in your learning experience. This is reflected in the &#10;                 prestigious university qualifications offered, our well experienced academic faculty, &#10;  the modern, state-of-the-art learning facilities as well as the friendly and supportive study environment.&#10;             We take pride in enabling students to have access to their dream university, regardless of &#10;           what country it is located in. By opening up an array of prestigious and globally recognized &#10;        higher education opportunities for Sri Lanka students, we aim to transform today's young minds &#10;                                                                 into tomorrow's leaders.">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="368.0" layoutY="383.0" prefHeight="21.0" prefWidth="66.0" text="Vision">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="410.0" prefHeight="21.0" prefWidth="486.0" text="Our Vision is to become Sri Lanka's leading  higher educational provider." />
+            <Label layoutX="360.0" layoutY="437.0" prefHeight="21.0" prefWidth="66.0" text="Mission">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="464.0" prefHeight="21.0" prefWidth="655.0" text="Striving to provide students with a globally recognized qualification and thereby transform today's" />
+            <Label layoutX="249.0" layoutY="485.0" prefHeight="21.0" prefWidth="252.0" text="young minds into tomorrow's leaders." />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
