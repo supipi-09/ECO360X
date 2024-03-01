@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="800.0" style="-fx-background-color: rgba(217, 217, 217, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.LoginContactUsFormController">
+   <children>
+      <Pane prefHeight="530.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="9.0" prefHeight="513.0" prefWidth="412.0">
+               <children>
+                  <TextField layoutX="9.0" layoutY="122.0" prefHeight="31.0" prefWidth="367.0" promptText="Your Name" />
+                  <Label layoutX="7.0" layoutY="97.0" text=" Name">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="166.0" text=" Email">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="9.0" layoutY="191.0" prefHeight="31.0" prefWidth="367.0" promptText="Email Address" />
+                  <TextField layoutX="9.0" layoutY="260.0" prefHeight="31.0" prefWidth="367.0" promptText="Phone Number" />
+                  <TextArea layoutX="9.0" layoutY="335.0" prefHeight="93.0" prefWidth="367.0" promptText="Write Your Message Here..." />
+                  <Label layoutX="5.0" layoutY="233.0" text=" Phone">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="310.0" text=" Message">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="308.0" layoutY="469.0" mnemonicParsing="false" style="-fx-background-color: rgba(66, 107, 31, 1);" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="152.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assests/Send%20Us%20A%20Message.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="347.0" layoutX="5.0" layoutY="54.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assests/contactUs_txt2_mage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="492.0" fitWidth="281.0" layoutX="461.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/contactUs_txt1_mage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

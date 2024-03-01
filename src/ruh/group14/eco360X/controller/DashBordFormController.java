@@ -25,7 +25,7 @@ public class DashBordFormController {
     }
 
     public void contactUsOnAction(ActionEvent actionEvent) throws IOException {
-        setUiB("ContactUs");
+        setUiB("ContactUsForm");
     }
 
     public void loginSignupOnAction(ActionEvent actionEvent) throws IOException {
