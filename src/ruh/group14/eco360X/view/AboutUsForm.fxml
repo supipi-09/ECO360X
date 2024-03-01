@@ -1,32 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="530.0" prefWidth="800.0" style="-fx-background-color: rgba(217, 217, 217, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.AboutUsFormController">
    <children>
       <Pane layoutX="1.0" layoutY="1.0" prefHeight="530.0" prefWidth="800.0">
          <children>
-            <Label layoutX="346.0" layoutY="384.0" prefHeight="27.0" prefWidth="62.0" text="Vision">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="156.0" layoutY="411.0" prefHeight="21.0" prefWidth="488.0" text="Our Vision is to become Sri Lanka's leading  higher educational provider." />
-            <Label layoutX="340.0" layoutY="440.0" prefHeight="27.0" prefWidth="73.0" text="Mission">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="71.0" layoutY="467.0" prefHeight="21.0" prefWidth="658.0" text="Striving to provide students with a globally recognized qualification and thereby transform today's" />
-            <Label layoutX="266.0" layoutY="488.0" prefHeight="21.0" prefWidth="269.0" text="young minds into tomorrow's leaders." />
-            <ImageView fitHeight="360.0" fitWidth="773.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="354.0" fitWidth="773.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
                <image>
-                  <Image url="@../assests/text.png" />
+                  <Image url="@../assests/AuboutUs_txt1_mage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="687.0" layoutX="57.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/AuboutUs_txt2_mage.png" />
                </image>
             </ImageView>
          </children>
