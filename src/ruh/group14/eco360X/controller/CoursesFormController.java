@@ -1,25 +1,26 @@
 package ruh.group14.eco360X.controller;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import ruh.group14.eco360X.routing.Routing_1;
 
 import java.io.IOException;
-import java.net.URL;
 
 public class CoursesFormController {
-    private void newWindowOnAction(String location) throws IOException {
-        Stage stage = new Stage();
-        URL resource = getClass().getResource("../view/"+location+".fxml");
-        Parent load = FXMLLoader.load(resource);
-        Scene scene = new Scene(load);
-        stage.setScene(scene);
-        stage.show();
-    }
+    Routing_1 w1=new Routing_1();
 
     public void startNow_1_OnAction(ActionEvent actionEvent) throws IOException {
-        newWindowOnAction("CourseContentForm_1");
+        w1.newWindowOnAction("CourseContentForm_1");
+    }
+
+    public void startNow_4_OnAction(ActionEvent actionEvent) throws IOException {
+        w1.newWindowOnAction("StillNotAvailableForm");
+    }
+
+    public void startNow_3_OnAction(ActionEvent actionEvent) throws IOException {
+        w1.newWindowOnAction("StillNotAvailableForm");
+    }
+
+    public void startNow_2_OnAction(ActionEvent actionEvent) throws IOException {
+        w1.newWindowOnAction("StillNotAvailableForm");
     }
 }
