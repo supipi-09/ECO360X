@@ -11,6 +11,9 @@ public class Database {
         userTable.add(
                 new User("Janith","Ranasinghe",
                         "Kosgame","200117001804","janith@gmail.com","123")
+        );userTable.add(
+                new User("Thejana","Hirumal",
+                        "Kandy","200017001804","thejana@gmail.com","234")
         );
     }
 }

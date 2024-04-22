@@ -8,7 +8,7 @@ public class User {
     private String email;
     private String password;
 
-    public User() {
+    public User(String email) {
     }
 
     public User(String firstName, String lastName, String address, String nic, String email, String password) {
@@ -66,5 +66,17 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", nic='" + nic + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

@@ -22,9 +22,13 @@ public class LoginDashBordFormController {
     public Label lblTime;
     public Label lblDate;
     public AnchorPane contextB;
+
+    public void initialize() {
+        setData();
+    }
+
     private void setData() {
         Date date = new Date();
-        Date time = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyy-MM-dd");
         String txtDate = dateFormat.format(date);
         lblDate.setText(txtDate);
@@ -58,6 +62,7 @@ public class LoginDashBordFormController {
     public void contactUsOnAction(ActionEvent actionEvent) throws IOException {
         setUiB("ContactUsForm");
     }
+
     public void profileOnAction(ActionEvent actionEvent) throws IOException {
         setUi("ProfileForm");
     }

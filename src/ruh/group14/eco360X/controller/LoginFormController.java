@@ -36,6 +36,8 @@ public class LoginFormController {
             if (user.getEmail().equals(email)) {
                 if (user.getPassword().equals(password)) {
                     setUi("LoginDashBordForm");
+
+                    ProfileFormControlledr.loginEmail=email;
                     return;
                 } else {
                     new Alert(Alert.AlertType.WARNING,
@@ -54,4 +56,5 @@ public class LoginFormController {
                 FXMLLoader.load(getClass().getResource("../view/" + location + ".fxml"))));
         stage.centerOnScreen();
     }
+
 }
