@@ -2,20 +2,39 @@ package ruh.group14.eco360X.model;
 
 public class User {
     private String firstName;
-    private String lasttName;
+    private String lastName;
+    private String address;
+    private String nic;
     private String email;
     private String password;
 
     public User() {
     }
 
-    public User(String firstName, String lasttName, String email, String password) {
+    public User(String firstName, String lastName, String address, String nic, String email, String password) {
         this.firstName = firstName;
-        this.lasttName = lasttName;
+        this.lastName = lastName;
+        this.address = address;
+        this.nic = nic;
         this.email = email;
         this.password = password;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getNic() {
+        return nic;
+    }
+
+    public void setNic(String nic) {
+        this.nic = nic;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -26,11 +45,11 @@ public class User {
     }
 
     public String getLasttName() {
-        return lasttName;
+        return lastName;
     }
 
     public void setLasttName(String lasttName) {
-        this.lasttName = lasttName;
+        this.lastName = lasttName;
     }
 
     public String getEmail() {

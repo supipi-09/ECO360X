@@ -19,21 +19,30 @@ public class SignUpFormController {
     public TextField txtLastName;
     public TextField txtFirstName;
     public TextField txtEmail;
+    public TextField txtAddress;
+    public TextField txtNic;
 
     public void signUpOnAction(ActionEvent actionEvent) throws IOException {
         String email = txtEmail.getText().toLowerCase();
         String firstName = txtFirstName.getText();
         String lastName = txtLastName.getText();
+        String address = txtAddress.getText();
+        String nic = txtAddress.getText();
         String password = txtPassword.getText().trim();//depaththa spaces ayn karanwa
+
         Database.userTable.add(
-          new User(firstName,lastName,email,password)
+                new User(firstName, lastName, address, nic, email, password)
         );
-        new Alert(Alert.AlertType.INFORMATION,"Welcome!").show();
+        new Alert(Alert.AlertType.INFORMATION, "Welcome" + " " +
+                firstName + " " + lastName + " " + "Congrats Your Signup Successful!").show();
         setUi("LoginForm");
+
     }
-    private void setUi(String location) throws IOException{
+
+    private void setUi(String location) throws IOException {
         Stage stage = (Stage) context.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/"+location+".fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/" + location + ".fxml"))));
         stage.centerOnScreen();
     }
+
 }

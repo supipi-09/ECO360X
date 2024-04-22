@@ -10,7 +10,7 @@ public class Database {
     static {
         userTable.add(
                 new User("Janith","Ranasinghe",
-                        "janith@gmail.com","123")
+                        "Kosgame","200117001804","janith@gmail.com","123")
         );
     }
 }
