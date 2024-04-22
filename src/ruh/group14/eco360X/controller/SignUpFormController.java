@@ -33,7 +33,7 @@ public class SignUpFormController {
         Database.userTable.add(
                 new User(firstName, lastName, address, nic, email, password)
         );
-        new Alert(Alert.AlertType.INFORMATION, "Welcome" + " " +
+        new Alert(Alert.AlertType.CONFIRMATION, "Welcome" + " " +
                 firstName + " " + lastName + " " + "Congrats Your Signup Successful!").show();
         setUi("LoginForm");
 

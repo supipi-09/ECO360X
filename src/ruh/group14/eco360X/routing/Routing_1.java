@@ -15,6 +15,7 @@ public class Routing_1 {
         Parent load = FXMLLoader.load(resource);
         Scene scene = new Scene(load);
         stage.setScene(scene);
+        stage.setTitle("Eco360X");
         stage.show();
     }
 }

@@ -37,7 +37,10 @@ public class LoginFormController {
                 if (user.getPassword().equals(password)) {
                     setUi("LoginDashBordForm");
 
-                    ProfileFormControlledr.loginEmail=email;
+                    ProfileFormControlledr.loginEmail =email;
+
+                   new Alert(Alert.AlertType.CONFIRMATION,
+                           "You are Successfully login to the system!").show();
                     return;
                 } else {
                     new Alert(Alert.AlertType.WARNING,
