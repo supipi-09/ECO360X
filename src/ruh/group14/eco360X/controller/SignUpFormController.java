@@ -27,7 +27,7 @@ public class SignUpFormController {
         String firstName = txtFirstName.getText();
         String lastName = txtLastName.getText();
         String address = txtAddress.getText();
-        String nic = txtAddress.getText();
+        String nic = txtNic.getText();
         String password = txtPassword.getText().trim();//depaththa spaces ayn karanwa
 
         Database.userTable.add(
