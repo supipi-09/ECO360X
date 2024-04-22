@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import ruh.group14.eco360X.routing.Routing_2;
 
 import java.io.IOException;
 

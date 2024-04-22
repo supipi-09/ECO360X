@@ -47,19 +47,19 @@
                   </Button>
                   <ImageView fitHeight="25.0" fitWidth="152.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true">
                      <image>
-                        <Image url="@../assests/Send%20Us%20A%20Message.png" />
+                        <Image url="@../assets/Send%20Us%20A%20Message.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="31.0" fitWidth="347.0" layoutX="5.0" layoutY="54.0" pickOnBounds="true">
                      <image>
-                        <Image url="@../assests/contactUs_txt2_mage.png" />
+                        <Image url="@../assets/contactUs_txt2_mage.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
             <ImageView fitHeight="492.0" fitWidth="281.0" layoutX="461.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assests/contactUs_txt1_mage.png" />
+                  <Image url="@../assets/contactUs_txt1_mage.png" />
                </image>
             </ImageView>
          </children>

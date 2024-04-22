@@ -26,7 +26,7 @@
                                     <children>
                                         <ImageView fitHeight="160.0" fitWidth="320.0" layoutX="2.0" pickOnBounds="true">
                                             <image>
-                                                <Image url="@../assests/Bird_mage.png" />
+                                                <Image url="@../assets/Bird_mage.png" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -38,12 +38,12 @@
                                 </Button>
                                 <ImageView fitHeight="61.0" fitWidth="295.0" layoutX="28.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../assests/Bird_topic_mage.png" />
+                                        <Image url="@../assets/Bird_topic_mage.png" />
                                     </image>
                                 </ImageView>
                                 <ImageView fitHeight="75.0" fitWidth="263.0" layoutX="41.0" layoutY="287.0" pickOnBounds="true">
                                     <image>
-                                        <Image url="@../assests/Bird_txt_mage.png" />
+                                        <Image url="@../assets/Bird_txt_mage.png" />
                                     </image>
                                 </ImageView>
                             </children>
@@ -59,7 +59,7 @@
                                     <children>
                                         <ImageView fitHeight="160.0" fitWidth="320.0" layoutX="2.0" pickOnBounds="true">
                                             <image>
-                                                <Image url="@../assests/leopar_mage.jpg" />
+                                                <Image url="@../assets/leopar_mage.jpg" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -71,12 +71,12 @@
                                 </Button>
                                 <ImageView fitHeight="61.0" fitWidth="295.0" layoutX="28.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../assests/leopar_topic_mage.jpg" />
+                                        <Image url="@../assets/leopar_topic_mage.jpg" />
                                     </image>
                                 </ImageView>
                                 <ImageView fitHeight="75.0" fitWidth="263.0" layoutX="40.0" layoutY="270.0" pickOnBounds="true">
                                     <image>
-                                        <Image url="@../assests/leopar_txt_mage.jpg" />
+                                        <Image url="@../assets/leopar_txt_mage.jpg" />
                                     </image>
                                 </ImageView>
                             </children>
@@ -92,7 +92,7 @@
                                     <children>
                                         <ImageView fitHeight="160.0" fitWidth="320.0" layoutX="2.0" pickOnBounds="true">
                                             <image>
-                                                <Image url="@../assests/Snakes_mage.jpg" />
+                                                <Image url="@../assets/Snakes_mage.jpg" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -104,12 +104,12 @@
                                 </Button>
                                 <ImageView fitHeight="25.0" fitWidth="132.0" layoutX="115.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../assests/Snakes_topic_mage.png" />
+                                        <Image url="@../assets/Snakes_topic_mage.png" />
                                     </image>
                                 </ImageView>
                                 <ImageView fitHeight="66.0" fitWidth="246.0" layoutX="49.0" layoutY="273.0" pickOnBounds="true">
                                     <image>
-                                        <Image url="@../assests/Snakes_txt_mage.png" />
+                                        <Image url="@../assets/Snakes_txt_mage.png" />
                                     </image>
                                 </ImageView>
                             </children>
@@ -125,7 +125,7 @@
                                     <children>
                                         <ImageView fitHeight="160.0" fitWidth="320.0" layoutX="2.0" pickOnBounds="true">
                                             <image>
-                                                <Image url="@../assests/elephant_mage.jpg" />
+                                                <Image url="@../assets/elephant_mage.jpg" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -137,12 +137,12 @@
                                 </Button>
                                 <ImageView fitHeight="35.0" fitWidth="133.0" layoutX="106.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../assests/Elephant_topic_mage.png" />
+                                        <Image url="@../assets/Elephant_topic_mage.png" />
                                     </image>
                                 </ImageView>
                                 <ImageView fitHeight="63.0" fitWidth="254.0" layoutX="45.0" layoutY="269.0" pickOnBounds="true">
                                     <image>
-                                        <Image url="@../assests/elephant_txt_mage.jpg" />
+                                        <Image url="@../assets/elephant_txt_mage.jpg" />
                                     </image>
                                 </ImageView>
                             </children>
