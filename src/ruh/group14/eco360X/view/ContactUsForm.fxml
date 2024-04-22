@@ -2,10 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -14,54 +13,148 @@
    <children>
       <Pane prefHeight="530.0" prefWidth="800.0">
          <children>
-            <Pane layoutX="14.0" layoutY="9.0" prefHeight="513.0" prefWidth="412.0">
+            <Pane layoutX="21.0" layoutY="24.0" prefHeight="483.0" prefWidth="412.0" style="-fx-background-color: rgb(181, 192, 208,0.45);">
                <children>
-                  <TextField layoutX="9.0" layoutY="122.0" prefHeight="31.0" prefWidth="367.0" promptText="Your Name" />
-                  <Label layoutX="7.0" layoutY="97.0" text=" Name">
+                  <TextField fx:id="txtName" layoutX="19.0" layoutY="127.0" prefHeight="30.0" prefWidth="350.0" promptText="Your Name">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <Label layoutX="17.0" layoutY="102.0" text=" Name">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="8.0" layoutY="166.0" text=" Email">
+                  <Label layoutX="18.0" layoutY="171.0" text=" Email">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="9.0" layoutY="191.0" prefHeight="31.0" prefWidth="367.0" promptText="Email Address" />
-                  <TextField layoutX="9.0" layoutY="260.0" prefHeight="31.0" prefWidth="367.0" promptText="Phone Number" />
-                  <TextArea layoutX="9.0" layoutY="335.0" prefHeight="93.0" prefWidth="367.0" promptText="Write Your Message Here..." />
-                  <Label layoutX="5.0" layoutY="233.0" text=" Phone">
+                  <TextField fx:id="txtEmail" layoutX="19.0" layoutY="196.0" prefHeight="30.0" prefWidth="350.0" promptText="Email Address">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtPhone" layoutX="19.0" layoutY="265.0" prefHeight="30.0" prefWidth="350.0" promptText="Phone Number">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextArea fx:id="txtMessage" layoutX="19.0" layoutY="333.0" prefHeight="90.0" prefWidth="350.0" promptText="Write Your Message Here...">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextArea>
+                  <Label layoutX="15.0" layoutY="238.0" text=" Phone">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="9.0" layoutY="310.0" text=" Message">
+                  <Label layoutX="19.0" layoutY="308.0" text=" Message">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Button layoutX="308.0" layoutY="469.0" mnemonicParsing="false" style="-fx-background-color: rgba(66, 107, 31, 1);" text="Submit" textFill="WHITE">
+                  <Button layoutX="269.0" layoutY="439.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: rgba(66, 107, 31, 1);" text="Submit" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="25.0" fitWidth="152.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../assests/Send%20Us%20A%20Message.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="31.0" fitWidth="347.0" layoutX="5.0" layoutY="54.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../assests/contactUs_txt2_mage.png" />
-                     </image>
-                  </ImageView>
+                  <Label layoutX="18.0" layoutY="14.0" text="Contact Us" textFill="#003c43">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="53.0" text="Complete The Form Below And We'll Respond To Your Enquiry">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="73.0" text="Within Two Business Days.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="19.0" layoutY="48.0" prefHeight="5.0" prefWidth="350.0" />
                </children>
             </Pane>
-            <ImageView fitHeight="492.0" fitWidth="281.0" layoutX="461.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assests/contactUs_txt1_mage.png" />
-               </image>
-            </ImageView>
+            <Pane layoutX="459.0" layoutY="24.0" prefHeight="482.0" prefWidth="320.0" style="-fx-background-color: rgb(181, 192, 208,0.45);">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" text="Colombo" textFill="#003c43">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="17.0" layoutY="48.0" prefHeight="5.0" prefWidth="286.0" />
+                  <Label layoutX="19.0" layoutY="53.0" text="Address">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="78.0" text="No 546/3, Galle Road, Colombo 03">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="107.0" text="Email">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="132.0" text="info@eco360x.edu.lk">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="159.0" text="Phone">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="188.0" text="Hotline: +94 777 888 625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="211.0" text="Phone: +94 115 888 625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="256.0" text="office hours" textFill="#003c43">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="18.0" layoutY="286.0" prefHeight="5.0" prefWidth="286.0" />
+                  <Label layoutX="23.0" layoutY="298.0" text="Monday - Friday">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="323.0" text="08:30 AM - 5:00 PM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="355.0" text="Saturday">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="380.0" text="08:30 AM - 1:00 PM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="412.0" text="Sunday">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="437.0" text="Closed">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </Pane>
    </children>

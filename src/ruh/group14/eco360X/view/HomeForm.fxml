@@ -11,12 +11,12 @@
          <children>
             <ImageView fitHeight="398.0" fitWidth="781.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
                <image>
-                  <Image url="@../assests/Home_mage.png" />
+                  <Image url="@../assets/Home_mage.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="131.0" fitWidth="762.0" layoutX="20.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assests/Home_txt_mage.png" />
+                  <Image url="@../assets/Home_txt_mage.png" />
                </image>
             </ImageView>
          </children>
