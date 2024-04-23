@@ -12,6 +12,11 @@ public class ContactUsController {
     public TextArea txtMessage;
 
     public void submitOnAction(ActionEvent actionEvent) {
+        txtName.clear();
+        txtEmail.clear();
+        txtPhone.clear();
+        txtMessage.clear();
+
         new Alert(Alert.AlertType.CONFIRMATION,
                 "Hello"+" "+txtName.getText()+" "+"We got your massage.").show();
     }

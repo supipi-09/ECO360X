@@ -30,7 +30,7 @@ public class DashBordFormController {
 
     private void setData() {
         Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("y-M-d");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String txtDate = dateFormat.format(date);
         lblDate.setText(txtDate);
 
