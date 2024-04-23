@@ -30,7 +30,7 @@ public class DashBordFormController {
 
     private void setData() {
         Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyy-MM-dd");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String txtDate = dateFormat.format(date);
         lblDate.setText(txtDate);
 
@@ -48,7 +48,7 @@ public class DashBordFormController {
         timeline.play();
     }
 
-    public void homeOnAction(ActionEvent actionEvent) throws IOException {//method
+    public void homeOnAction(ActionEvent actionEvent) throws IOException {
         setUiB("HomeForm");
     }
 
