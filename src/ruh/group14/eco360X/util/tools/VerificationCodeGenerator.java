@@ -1,4 +1,4 @@
-package ruh.group14.eco360X.tools;
+package ruh.group14.eco360X.util.tools;
 
 import java.util.Random;
 

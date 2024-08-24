@@ -1,4 +1,4 @@
-package util.Security;
+package ruh.group14.eco360X.util.Security;
 
 import org.mindrot.jbcrypt.BCrypt;
 
