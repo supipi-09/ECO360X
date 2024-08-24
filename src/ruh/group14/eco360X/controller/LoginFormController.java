@@ -9,9 +9,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import ruh.group14.eco360X.db.Database;
+import ruh.group14.eco360X.db.UserSelect;
 import ruh.group14.eco360X.model.User;
+import ruh.group14.eco360X.util.Security.PasswordManager;
 
 import java.io.IOException;
+import java.sql.*;
 
 import static java.lang.String.format;
 
@@ -32,25 +35,22 @@ public class LoginFormController {
         String email = txtEmail.getText().toLowerCase();
         String password = txtPassword.getText().trim();
 
-        for (User user : Database.userTable) {
-            if (user.getEmail().equals(email)) {
-                if (user.getPassword().equals(password)) {
+        try {
+            User selectedUser = new UserSelect().login(email);
+            if (null != selectedUser) {
+                if (new PasswordManager().checkPassword(password, selectedUser.getPassword())) {
                     setUi("LoginDashBordForm");
-
-                    ProfileFormControlledr.loginEmail =email;
-
-                   new Alert(Alert.AlertType.CONFIRMATION,
-                           "You are Successfully login to the system!").show();
-                    return;
+                    ProfileFormController.userEmail = selectedUser.getEmail();
+                    new Alert(Alert.AlertType.INFORMATION, "Login Successful").show();
                 } else {
-                    new Alert(Alert.AlertType.WARNING,
-                            "Wrong Password or Email").show();
-                    return;
+                    new Alert(Alert.AlertType.ERROR, "Wrong Password").show();
                 }
+            } else {
+                new Alert(Alert.AlertType.ERROR, String.format("%s not found", email)).show();
             }
+        } catch (SQLException | ClassNotFoundException e) {
+            new Alert(Alert.AlertType.WARNING, e.toString()).show();
         }
-        new Alert(Alert.AlertType.WARNING,
-                "Wrong Password or Email").show();
     }
 
     private void setUi(String location) throws IOException {
@@ -59,5 +59,4 @@ public class LoginFormController {
                 FXMLLoader.load(getClass().getResource("../view/" + location + ".fxml"))));
         stage.centerOnScreen();
     }
-
 }
