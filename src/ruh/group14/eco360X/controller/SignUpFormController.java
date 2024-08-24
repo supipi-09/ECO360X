@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import ruh.group14.eco360X.db.Database;
 import ruh.group14.eco360X.model.User;
+import util.Security.PasswordManager;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -32,7 +33,7 @@ public class SignUpFormController {
         String lastName = txtLastName.getText();
         String address = txtAddress.getText();
         String nic = txtNic.getText();
-        String password = txtPassword.getText().trim();//depaththa spaces ayn karanwa
+        String password = new PasswordManager().encrypt(txtPassword.getText().trim());
 
         User createUser = new User(firstName, lastName, address, nic, email, password);
 
@@ -58,19 +59,17 @@ public class SignUpFormController {
     private boolean signUp(User user) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection =
-                DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","1234");
-        String sql = "INSERT INTO users VALUES ('"+user.getNic()+"','"+user.getFirstName()+"'," +
-                "'"+user.getLasttName()+"','"+user.getEmail()+"','"+user.getPassword()+"','"+user.getAddress()+"')";
-        PreparedStatement preparedStatement =connection.prepareStatement(sql);
-        /*preparedStatement.setString(1, user.getNic());
+                DriverManager.getConnection("jdbc:mysql://localhost:3306/wildCourse_lms", "root", "1234");
+        PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO users VALUES (?,?,?,?,?,?)");
+        preparedStatement.setString(1, user.getNic());
         preparedStatement.setString(2, user.getFirstName());
         preparedStatement.setString(3, user.getLasttName());
         preparedStatement.setString(4, user.getEmail());
-        preparedStatement.setString(5, user.getPassword());
-        preparedStatement.setString(6, user.getAddress());*/
-        int rowCount =preparedStatement.executeUpdate(sql);
+        preparedStatement.setString(5, user.getAddress());
+        preparedStatement.setString(6, user.getPassword());
+        int rowCount = preparedStatement.executeUpdate();
 
-        return rowCount>0;
+        return rowCount > 0;
     }
 
 }
