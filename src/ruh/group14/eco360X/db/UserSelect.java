@@ -6,9 +6,7 @@ import java.sql.*;
 
 public class UserSelect {
     public User login(String email) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection =
-                DriverManager.getConnection("jdbc:mysql://localhost:3306/wildCourse_lms", "root", "1234");
+        Connection connection = DbConnection.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE email = ?");
         preparedStatement.setString(1, email);
         ResultSet resultSet = preparedStatement.executeQuery();

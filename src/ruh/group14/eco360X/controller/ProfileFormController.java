@@ -24,13 +24,13 @@ public class ProfileFormController {
 
     public void initialize() {
         try {
-            User user =new UserSelect().login(userEmail);
+            User user = new UserSelect().login(userEmail);
             lblAddress.setText(user.getAddress());
             lblEmail.setText(user.getEmail());
             lblNic.setText(user.getNic());
             lblFirstName.setText(user.getFirstName());
             lblLastName.setText(user.getLasttName());
-        }catch (SQLException | ClassNotFoundException e){
+        } catch (SQLException | ClassNotFoundException e) {
             System.out.println(e);
         }
     }

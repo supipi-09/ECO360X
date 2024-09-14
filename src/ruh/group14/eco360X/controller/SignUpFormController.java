@@ -8,6 +8,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import ruh.group14.eco360X.db.DbConnection;
 import ruh.group14.eco360X.model.User;
 import ruh.group14.eco360X.util.Security.PasswordManager;
 
@@ -56,9 +57,7 @@ public class SignUpFormController {
     }
 
     private boolean signUp(User user) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection connection =
-                DriverManager.getConnection("jdbc:mysql://localhost:3306/wildCourse_lms", "root", "1234");
+        Connection connection = DbConnection.getInstance().getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO users VALUES (?,?,?,?,?,?)");
         preparedStatement.setString(1, user.getNic());
         preparedStatement.setString(2, user.getFirstName());

@@ -40,7 +40,7 @@ public class LoginFormController {
             if (null != selectedUser) {
                 if (new PasswordManager().checkPassword(password, selectedUser.getPassword())) {
                     setUi("LoginDashBordForm");
-                    ProfileFormController.userEmail = selectedUser.getEmail();
+                    ProfileFormController.userEmail = selectedUser.getEmail(); //for load to user details within profileFormController
                     new Alert(Alert.AlertType.INFORMATION, "Login Successful").show();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Wrong Password").show();
