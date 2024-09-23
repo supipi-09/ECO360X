@@ -63,10 +63,8 @@ public class ForgotPasswordFormController {
                 new Alert(Alert.AlertType.ERROR, "This email not found").show();
             }
 
-        } catch (MessagingException e) {
+        } catch (MessagingException | IOException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
 
     }

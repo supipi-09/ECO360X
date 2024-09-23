@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import ruh.group14.eco360X.db.Database;
 import ruh.group14.eco360X.db.UserSelect;
 import ruh.group14.eco360X.model.User;
 

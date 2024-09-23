@@ -8,15 +8,12 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import ruh.group14.eco360X.db.Database;
 import ruh.group14.eco360X.db.UserSelect;
 import ruh.group14.eco360X.model.User;
 import ruh.group14.eco360X.util.Security.PasswordManager;
 
 import java.io.IOException;
 import java.sql.*;
-
-import static java.lang.String.format;
 
 public class LoginFormController {
     public AnchorPane stgLoginWindow;
