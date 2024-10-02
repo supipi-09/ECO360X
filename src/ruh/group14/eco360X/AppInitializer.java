@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 
 public class AppInitializer extends Application {
@@ -14,7 +15,7 @@ public class AppInitializer extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) throws IOException {
         URL resource = getClass().getResource("./view/DashBordForm.fxml");
         Parent load = FXMLLoader.load(resource);
         Scene scene = new Scene(load);

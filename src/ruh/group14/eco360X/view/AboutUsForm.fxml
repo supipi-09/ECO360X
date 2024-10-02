@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="530.0" prefWidth="800.0" style="-fx-background-color: rgba(217, 217, 217, 0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.AboutUsFormController">
+<AnchorPane prefHeight="530.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.AboutUsFormController">
    <children>
-      <Label layoutX="326.0" layoutY="239.0" text="About Us">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
+      <Pane layoutX="1.0" layoutY="1.0" prefHeight="530.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="354.0" fitWidth="773.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/AuboutUs_txt1_mage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="687.0" layoutX="57.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/AuboutUs_txt2_mage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

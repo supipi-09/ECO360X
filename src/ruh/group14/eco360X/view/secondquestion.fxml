@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#openThirdQuestion" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruh.group14.eco360X.controller.HomeController">
+   <children>
+      <Label layoutX="33.0" layoutY="75.0" text="What adaptation enables birds to regulate their body temperature internally?">
+         <font>
+            <Font name="Footlight MT Light" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="66.0" layoutY="145.0" mnemonicParsing="false" text="Endothermy" />
+      <RadioButton layoutX="68.0" layoutY="183.0" mnemonicParsing="false" text="Ectothermy" />
+      <RadioButton layoutX="68.0" layoutY="219.0" mnemonicParsing="false" text="Pneumaticity" />
+      <RadioButton layoutX="68.0" layoutY="257.0" mnemonicParsing="false" text="Heterothermy" />
+      <Button layoutX="518.0" layoutY="331.0" mnemonicParsing="false" onAction="#openThirdQuestion" text="Next" />
+   </children>
+</AnchorPane>
