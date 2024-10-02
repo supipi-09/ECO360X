@@ -15,7 +15,30 @@ public class CourseContentForm_5Controller {
         setUi("CourseContentForm_4");
     }
     public void quizOnAction(ActionEvent actionEvent) {
+        try {
+            // Load the FXML file
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/home.fxml"));
+            AnchorPane root = fxmlLoader.load();
+
+            // Create a new stage
+            Stage newStage = new Stage();
+            newStage.setTitle("Home");
+
+            // Set the scene
+            newStage.setScene(new Scene(root));
+
+            // Show the stage
+            newStage.show();
+
+            // Close the current stage
+            Stage currentStage = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
+            currentStage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
+
 
     private void setUi(String location) throws IOException {
         Stage stage = (Stage) context.getScene().getWindow();// create new stage
