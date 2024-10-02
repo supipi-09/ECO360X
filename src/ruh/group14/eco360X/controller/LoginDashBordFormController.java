@@ -52,7 +52,7 @@ public class LoginDashBordFormController {
     }
 
     public void coursesOnAction(ActionEvent actionEvent) throws IOException {
-        setUiB("CoursesForm");
+        setUiB("LoginCourseForm");
     }
 
     public void aboutUsOnAction(ActionEvent actionEvent) throws IOException {
