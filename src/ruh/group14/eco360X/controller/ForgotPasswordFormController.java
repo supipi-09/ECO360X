@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import ruh.group14.eco360X.tools.VerificationCodeGenerator;
+import ruh.group14.eco360X.util.tools.VerificationCodeGenerator;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
